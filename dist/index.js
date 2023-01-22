@@ -57,13 +57,16 @@ module.exports = class {
       return
     }
 
+    let issueKeys = '';
+
     for (const issueKey of match) {
       const issue = await this.Jira.getIssue(issueKey)
 
       if (issue) {
-        return { issue: issue.key }
+        issueKeys = issueKeys + `:${issue.key}`;
       }
     }
+    return { issues: issueKeys }
   }
 
   preprocessString (str) {
