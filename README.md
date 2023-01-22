@@ -10,7 +10,7 @@ Extract issue key from string
 To find an issue key inside github event (branch):
 ```yaml
 - name: Find in commit messages
-  uses: kherP/gajira-find-issue-key@v1.0.1
+  uses: kherP/gajira-find-issue-key@v1.0.2
   with:
     string: ${{ github.event.ref }}
 ```
@@ -18,7 +18,7 @@ To find an issue key inside github event (branch):
 Or do the same using shortcut `from`:
 ```yaml
 - name: Find in commit messages
-  uses: kherP/gajira-find-issue-key@v1.0.1
+  uses: kherP/gajira-find-issue-key@v1.0.2
   with:
     from: branch
 ```
@@ -26,7 +26,7 @@ Or do the same using shortcut `from`:
 To find an issue key inside commit messages:
 ```yaml
 - name: Find in commit messages
-  uses: kherP/gajira-find-issue-key@v1.0.1
+  uses: kherP/gajira-find-issue-key@v1.0.2
   with:
     from: commits
 ```

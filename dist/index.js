@@ -63,7 +63,7 @@ module.exports = class {
       const issue = await this.Jira.getIssue(issueKey)
 
       if (issue) {
-        issueKeys = issueKeys + `:${issue.key}`;
+        issueKeys = issueKeys + `;${issue.key}`;
       }
     }
     return { issues: issueKeys.substring(1) }
