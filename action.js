@@ -60,7 +60,7 @@ module.exports = class {
         issueKeys = issueKeys + `;${issue.key}`;
       }
     }
-    return { issues: issueKeys.substring(1) }
+    return { issue: issueKeys.substring(1) }
   }
 
   preprocessString (str) {

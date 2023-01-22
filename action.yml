@@ -12,8 +12,8 @@ inputs:
     required: false
     default: commits
 outputs:
-  issues:
-    description: Keys of the found issues
+  issue:
+    description: Keys of the found issue
 runs:
   using: 'node16'
   main: './dist/index.js'

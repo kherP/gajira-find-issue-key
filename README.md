@@ -42,7 +42,7 @@ To find an issue key inside commit messages:
 - `from` - Find from predefined place (should be either 'branch', or 'commits')
 
 ### Outputs
-- `issues` - Key of the found issue
+- `issue` - Key of the found issue
 
 ### Reads fields from config file at $HOME/jira/config.yml
 - None
