@@ -17,7 +17,7 @@ To find an issue key inside github event (branch):
 
 Or do the same using shortcut `from`:
 ```yaml
-- name: Find in commit messages
+- name: Find in branch name
   uses: kherP/gajira-find-issue-key@v1.0.3
   with:
     from: branch
